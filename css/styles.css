@@ -1,0 +1,323 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: url(../images/neon3.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+  position: relative;
+  top: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  position: absolute;
+  font-size: 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 1px;
+  bottom: 20px;
+  color: #8294c4;
+}
+
+/* agar tombol nav nya jadi bulet rapih */
+header .navigation a {
+  color: #ffffff;
+  background: #8294c4;
+  text-decoration: none;
+  letter-spacing: 1px;
+  padding: 2px 15px;
+  border-radius: 20px;
+  transition: 0.3s;
+  transition-property: background;
+}
+
+header .navigation a:not(:last-child) {
+  margin-right: 30px;
+}
+
+header .navigation a:hover {
+  background: #67759c;
+}
+
+.content {
+  max-width: 650px;
+  margin: 60px 100px;
+}
+
+.content .info h2 {
+  color: #8294c4;
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: 800;
+  line-height: 60px;
+  margin-bottom: 30px;
+}
+
+.content .info h2 span {
+  color: #fff;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+/* paragraf */
+.content .info p {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 40px;
+  color: #8294c4;
+}
+
+/* tombol info */
+.content .info-btn {
+  color: #fff;
+  background: #8294c4;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: 0.3s;
+  transition-property: background;
+}
+
+.content .info-btn:hover {
+  background: #647296;
+}
+
+/* tombol icon */
+.media-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.media-icons a {
+  position: relative;
+  color: #8294c4;
+  font-size: 25px;
+  transition: 0.3s;
+  transition-property: transform;
+  margin: 0 5px; /* mengubah margin menjadi 5px */
+}
+
+.media-icons a:not(:last-child) {
+  margin-right: 10px; /* mengubah margin-right menjadi 10px */
+}
+
+.media-icons a:hover {
+  transform: scale(1.5);
+}
+
+/* mading online */
+.mading-container {
+  width: 80%;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.mading {
+  background-color: rgba(
+    245,
+    245,
+    245,
+    0.8
+  ); /* Menjadikan background transparan */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.mading-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #000;
+  text-align: center; /* Mengatur teks ke tengah */
+}
+
+.mading-posts {
+  display: flex;
+  flex-direction: column;
+}
+
+.post {
+  margin-bottom: 20px;
+}
+
+.post-title {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.post-image {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.post-content {
+  margin-bottom: 5px;
+}
+
+.post-date {
+  font-size: 12px;
+  color: gray;
+}
+
+/* tombol search mading */
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Mengatur posisi elemen ke sebelah kanan */
+  margin-bottom: 20px;
+}
+
+#search-input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  width: 200px;
+  margin-right: 10px;
+}
+
+#search-button {
+  background-color: #8294c4;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#search-button:hover {
+  background-color: #67759c;
+}
+
+/* komentar */
+.komentar-container {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.komentar-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #8294c4;
+}
+
+.komentar-list {
+  margin-bottom: 20px;
+}
+
+.komentar {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px; /* Menjadikan sudut kotak lebih bulat */
+}
+
+.komentar-user {
+  margin-bottom: 5px;
+}
+
+.komentar-username {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.komentar-email {
+  font-size: 14px;
+  color: gray;
+}
+
+.komentar-content {
+  margin-bottom: 5px;
+}
+
+.komentar-form {
+  margin-bottom: 20px;
+}
+
+.form-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #8294c4;
+}
+
+.komentar-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.komentar-form form .form-label {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.komentar-form form .form-control {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 20px; /* Mengatur radius border menjadi 20px */
+  width: 100%; /* Menyesuaikan lebar input dengan 100% */
+}
+
+.komentar-form form .btn-primary {
+  background-color: #8294c4;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px; /* Mengatur radius border menjadi 20px */
+  font-weight: 600;
+  cursor: pointer;
+}
+.komentar-form form .btn-primary:hover {
+  background-color: #67759c;
+}
+
+.komentar-form form .btn-primary:focus {
+  outline: none;
+}
+
+.form-label {
+  color: #8294c4;
+}
+
+/* footer */
+.footer-container {
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-container p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #888;
+}
